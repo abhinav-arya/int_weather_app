@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Weather App Page 1`] = `
+<div
+  className="App"
+>
+  <header>
+    <h3>
+      The Weather App 
+      <b>
+        -
+      </b>
+       
+      <i>
+        Powered by OpenWeatherMap
+      </i>
+    </h3>
+  </header>
+  <MainPage />
+</div>
+`;
