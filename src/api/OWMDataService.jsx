@@ -8,7 +8,7 @@ class OWMDataService {
         return new Promise((resolve, reject) => {
             $.ajax({
                 type: 'GET',
-                url: `http://api.openweathermap.org/data/2.5/forecast?id=${id}&units=metric&APPID=${AppData.app_id}`,
+                url: `https://api.openweathermap.org/data/2.5/forecast?id=${id}&units=metric&APPID=${AppData.app_id}`,
                 cache: false,
                 format: 'json',
                 success: (response) => {
@@ -25,7 +25,7 @@ class OWMDataService {
         return new Promise((resolve, reject) => {
             $.ajax({
                 type: 'GET',
-                url: `http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${AppData.app_id}`,
+                url: `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${AppData.app_id}`,
                 cache: false,
                 format: 'json',
                 success: (response) => {
@@ -42,7 +42,7 @@ class OWMDataService {
         return new Promise((resolve, reject) => {
             $.ajax({
                 type: 'GET',
-                url: `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${AppData.app_id}`,
+                url: `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${AppData.app_id}`,
                 cache: false,
                 format: 'json',
                 success: (response) => {
