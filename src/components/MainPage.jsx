@@ -36,7 +36,6 @@ class MainPage extends React.Component {
 
                     OWMDataService.getWeatherByLocation(lat, lon)
                         .then((response) => {
-                            console.log(response)
                             this.updateWeatherState(response)
                         })
                         .catch((error) => {
